@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "all": "كل الفئات",
+    "food": "أكل وشرب",
+    "animals": "حيوانات",
+    "countries": "بلاد",
+    "movies": "أفلام",
+    "celebrities": "مشاهير",
+    "sports": "رياضة",
+    "professions": "مهن",
+    "objects": "حاجات بنستخدمها كل يوم",
+    "places": "أماكن",
+    "brands": "ماركات",
+    "technology": "تكنولوجيا",
+    "nature": "الطبيعة",
+    "transportation": "مواصلات",
+    "music": "موسيقى",
+    "videoGames": "ألعاب فيديو"
+  }
+}

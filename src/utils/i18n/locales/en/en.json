@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "all": "All categories",
+    "food": "Food & Drinks",
+    "animals": "Animals",
+    "countries": "Countries",
+    "movies": "Movies",
+    "celebrities": "Celebrities",
+    "sports": "Sports",
+    "professions": "Professions",
+    "objects": "Everyday Objects",
+    "places": "Places",
+    "brands": "Brands",
+    "technology": "Technology",
+    "nature": "Nature",
+    "transportation": "Transportation",
+    "music": "Music",
+    "videoGames": "Video Games"
+  }
+}
