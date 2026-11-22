@@ -34,7 +34,7 @@ export default function ThemeSelector({
           className={isDarkMode ? "invert" : ""}
           src={paintPalette}
           alt="paint palette icon for changing theme"
-          width={30}
+          width={28}
         />
       </button>
       <div

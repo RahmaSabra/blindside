@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import type { Theme } from "./types/theme";
 import ThemeSelector from "./components/ThemeSelector";
+import LangSwitcher from "./components/LangSwitcher";
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>("yellow");
@@ -17,7 +18,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-bg">
-      <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
+      <div className="flex flex-row">
+        {" "}
+        <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
+        <LangSwitcher isDarkMode={isDarkMode} />
+      </div>
+
       <h1 className="text-2xl text-center text-primary">hello world</h1>
     </div>
   );
