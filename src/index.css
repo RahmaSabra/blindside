@@ -6,8 +6,8 @@
 }
 
 :root {
-  --bg: #000000;
-  --primary: #ffffff;
+  --bg: #f4ff00;
+  --primary: #000000;
 }
 
 [data-theme="light"] {
@@ -15,9 +15,9 @@
   --primary: #000000;
 }
 
-[data-theme="yellow"] {
-  --bg: #f4ff00;
-  --primary: #000000;
+[data-theme="dark"] {
+  --bg: #000000;
+  --primary: #ffffff;
 }
 
 [data-theme="blue"] {

@@ -17,5 +17,14 @@
     "music": "Music",
     "videoGames": "Video Games",
     "random": "random"
+  },
+  "themes": {
+    "dark": "Dark",
+    "light": "Light",
+    "yellow": "Yellow",
+    "blue": "Blue",
+    "green": "Green",
+    "purple": "Purple",
+    "pink": "Pink"
   }
 }
