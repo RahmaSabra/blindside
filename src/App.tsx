@@ -19,9 +19,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-bg">
       <div className="flex flex-row">
-        {" "}
-        <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
         <LangSwitcher isDarkMode={isDarkMode} />
+        <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
       </div>
 
       <h1 className="text-2xl text-center text-primary">hello world</h1>

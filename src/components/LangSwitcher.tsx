@@ -27,7 +27,7 @@ export default function LangSwitcher({ isDarkMode }: LangSwitcherProps) {
         className={isDarkMode ? "invert" : ""}
       />
       <div className="bg-primary w-0.5 h-6"></div>
-      <p className="text-primar text-xl uppercase ">{i18n.language}</p>
+      <p className="text-primary text-xl uppercase ">{i18n.language}</p>
     </button>
   );
 }
