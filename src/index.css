@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Marhey:wght@300..700&display=swap");
 
 @import "tailwindcss";
 
@@ -8,12 +8,8 @@
 }
 
 @layer base {
-  html:lang(en) {
-    font-family: "DynaPuff", cursive;
-  }
-
-  html:lang(ar) {
-    font-family: "Baloo Bhaijaan 2", sans-serif;
+  html {
+    font-family: "DynaPuff", "Marhey", cursive;
   }
 }
 

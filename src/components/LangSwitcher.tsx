@@ -23,10 +23,10 @@ export default function LangSwitcher({ isDarkMode }: LangSwitcherProps) {
       <img
         src={globe}
         alt="globe symbol, language change button"
-        width={28}
+        width={24}
         className={isDarkMode ? "invert" : ""}
       />
-      <div className="bg-primary w-0.5 h-6"></div>
+      <div className="bg-primary w-0.5 h-5"></div>
       <p className="text-primary text-xl uppercase ">{i18n.language}</p>
     </button>
   );
