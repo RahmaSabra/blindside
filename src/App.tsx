@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import type { Theme } from "./types/theme";
 import ThemeSelector from "./components/ThemeSelector";
 import LangSwitcher from "./components/LangSwitcher";
+import Logo from "./components/Logo";
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>("yellow");
@@ -22,7 +23,7 @@ export default function App() {
         <LangSwitcher isDarkMode={isDarkMode} />
         <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
       </div>
-
+      <Logo isDarkMode={isDarkMode} />
       <h1 className="text-2xl text-center text-primary">hello world</h1>
     </div>
   );

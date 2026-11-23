@@ -3,7 +3,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { eyePath, eyeSlashPath } from "../assets/eyePaths";
 
-export default function EyeAnimation() {
+type EyeAnimationProps = {
+  isDarkMode: boolean;
+};
+
+export default function EyeAnimation({ isDarkMode }: EyeAnimationProps) {
   const eyeRef = useRef<SVGPathElement>(null);
   const slashRef = useRef<SVGPathElement>(null);
 
@@ -43,8 +47,12 @@ export default function EyeAnimation() {
   return (
     <div className="w-16 h-16 flex justify-center items-center bg-transparent border-3 border-primary rounded-full">
       <svg viewBox="0 1.2 56 56" width="40" height="40">
-        <path ref={eyeRef} d={eyePath} />
-        <path ref={slashRef} d={eyeSlashPath} />
+        <path ref={eyeRef} d={eyePath} fill={isDarkMode ? "white" : "black"} />
+        <path
+          ref={slashRef}
+          d={eyeSlashPath}
+          fill={isDarkMode ? "white" : "black"}
+        />
       </svg>
     </div>
   );
