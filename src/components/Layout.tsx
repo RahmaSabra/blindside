@@ -8,7 +8,6 @@ import type { Theme } from "../types/theme";
 
 type LayoutProps = {
   children: ReactNode;
-  themeSelectorOnClick: (theme: Theme) => void;
 };
 
 export default function Layout({ children }: LayoutProps) {
@@ -25,14 +24,16 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-bg">
-      <div className="flex flex-row">
+      <div className="flex flex-row mb-8 mt-2">
         {/*rules component goes here */}
-        <div className="flex flex-row gap-1 md:gap-3">
+        <div className="flex flex-row gap-1.5 md:gap-3">
           <LangSwitcher isDarkMode={isDarkMode} />
           <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
         </div>
       </div>
       <Logo isDarkMode={isDarkMode} />
+
+      {children}
     </div>
   );
 }

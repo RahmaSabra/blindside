@@ -1,3 +1,9 @@
+import Layout from "./components/Layout";
+
 export default function App() {
-  return <h1>hi</h1>;
+  return (
+    <Layout>
+      <h1>no children yet</h1>
+    </Layout>
+  );
 }
