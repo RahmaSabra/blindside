@@ -5,7 +5,7 @@ import type { Mode } from "../types/mode";
 import type { Rule } from "../types/rules";
 
 export default function Rules() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showRules, setShowRules] = useState(false);
   const [modeRule, setModeRule] = useState<Mode>("classic");
   const rules = t(`rules.${modeRule}.items`, {
@@ -18,7 +18,10 @@ export default function Rules() {
 
       {showRules && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/40">
-          <div className="bg-bg text-primary border-2 w-fit p-2 mx-4 shadow-[3px_4px_0px_var(--color-primary)] z-50">
+          <div
+            className="bg-bg text-primary border-2 w-fit p-2 mx-4 shadow-[3px_4px_0px_var(--color-primary)] z-50 "
+            dir={i18n.dir()}
+          >
             <div className="flex flex-col">
               <h1 className="font-extrabold mb-1">{t("rules.chooseMode")}</h1>
               <div className="flex flex-row gap-4 md:gap-8">
