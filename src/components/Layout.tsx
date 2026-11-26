@@ -24,7 +24,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-bg">
-      <div className="flex flex-row mb-8 mt-2">
+      <div className="flex flex-row mb-8">
         {/*rules component goes here */}
         <div className="flex flex-row gap-1.5 md:gap-3">
           <LangSwitcher isDarkMode={isDarkMode} />

@@ -26,5 +26,94 @@
     "green": "Green",
     "purple": "Purple",
     "pink": "Pink"
+  },
+  "rules": {
+    "title": "Game Rules",
+    "close": "Got it",
+
+    "Classic": {
+      "description": "Find the imposters before they figure out the secret word.",
+      "items": [
+        {
+          "title": "Know your role",
+          "description": "Most players receive the same secret word. Imposters don't know the word."
+        },
+        {
+          "title": "Interrogate each other",
+          "description": "Ask other players questions and pay attention to their answers. Imposters must blend in without knowing the secret word."
+        },
+        {
+          "title": "Watch and observe",
+          "description": "Pay attention to everyone's clues and look for suspicious answers."
+        },
+        {
+          "title": "Vote",
+          "description": "Once everyone has given their clues, vote for the player you suspect is an imposter."
+        },
+        {
+          "title": "Guess the word",
+          "description": "After the vote, imposters get a chance to guess the secret word."
+        }
+      ]
+    },
+    "Double Agent": {
+      "description": "An extra player knows the secret word and the imposters. Their mission? Help the imposters win without getting caught.",
+      "items": [
+        {
+          "title": "Know your role",
+          "description": "Most players receive the secret word, while imposters don't know it. The Double Agent knows both the secret word and the identities of the imposters. Their job is to secretly help the imposters blend in and win."
+        },
+        {
+          "title": "Interrogate each other",
+          "description": "Ask other players questions and pay attention to their answers. Imposters must blend in, while the Double Agent subtly helps them avoid suspicion without revealing their identity."
+        },
+        {
+          "title": "Watch and observe",
+          "description": "Pay attention to everyone's clues, avoid exposing the imposters, and make sure nobody suspects you."
+        },
+        {
+          "title": "Vote",
+          "description": "Once everyone has given their clues, vote for the player you suspect is an imposter."
+        },
+        {
+          "title": "Guess the word",
+          "description": "After the vote, imposters get a chance to guess the secret word."
+        },
+        {
+          "title": "Earn your points",
+          "description": "If the Double Agent gets caught, they lose points. If they avoid getting caught, they earn points. If the imposters win, the Double Agent also earns the same number of points as the imposters."
+        }
+      ]
+    },
+
+    "Odd One Out": {
+      "description": "Everyone has a word, but one player has a different one. Can they figure out what everyone else knows?",
+      "items": [
+        {
+          "title": "Know your role",
+          "description": "Most players receive the same secret word. One player, the Odd One Out, receives a different but related word."
+        },
+        {
+          "title": "Interrogate each other",
+          "description": "Ask other players questions and pay attention to their answers. The Odd One Out must blend in without knowing the original word."
+        },
+        {
+          "title": "Watch and observe",
+          "description": "Pay attention to everyone's clues and look for someone whose answers don't quite fit."
+        },
+        {
+          "title": "Vote",
+          "description": "Once everyone has given their clues, vote for the player you suspect is the Odd One Out."
+        },
+        {
+          "title": "Guess the original word",
+          "description": "After the vote, the Odd One Out gets a chance to guess the original secret word."
+        },
+        {
+          "title": "Earn your points",
+          "description": "The Odd One Out earns points for surviving the vote and additional points for correctly guessing the original word."
+        }
+      ]
+    }
   }
 }
