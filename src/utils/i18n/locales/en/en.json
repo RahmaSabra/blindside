@@ -30,8 +30,9 @@
   "rules": {
     "title": "Game Rules",
     "close": "Got it",
+    "chooseMode": "Choose a game mode to view its instructions.",
 
-    "Classic": {
+    "classic": {
       "description": "Find the imposters before they figure out the secret word.",
       "items": [
         {
@@ -56,7 +57,7 @@
         }
       ]
     },
-    "Double Agent": {
+    "doubleAgent": {
       "description": "An extra player knows the secret word and the imposters. Their mission? Help the imposters win without getting caught.",
       "items": [
         {
@@ -86,7 +87,7 @@
       ]
     },
 
-    "Odd One Out": {
+    "oddOneOut": {
       "description": "Everyone has a word, but one player has a different one. Can they figure out what everyone else knows?",
       "items": [
         {

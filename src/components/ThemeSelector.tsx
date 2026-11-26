@@ -28,7 +28,7 @@ export default function ThemeSelector({
     setIsMenuOpen((prev) => !prev);
   };
   return (
-    <div className="relative flex flex-col justify-center items-center">
+    <div className="relative flex flex-col justify-center items-center text-xs md:text-base">
       <button onClick={toggleMenu}>
         <img
           className={isDarkMode ? "invert" : ""}

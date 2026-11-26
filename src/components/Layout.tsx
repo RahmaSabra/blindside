@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import LangSwitcher from "./LangSwitcher";
 import ThemeSelector from "./ThemeSelector";
+import Rules from "./Rules";
 import Logo from "./Logo";
 import type { Theme } from "../types/theme";
 
@@ -24,8 +25,8 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-bg">
-      <div className="flex flex-row mb-8">
-        {/*rules component goes here */}
+      <div className="flex flex-row justify-between mb-8 mx-6 md:mx-12">
+        <Rules />
         <div className="flex flex-row gap-1.5 md:gap-3">
           <LangSwitcher isDarkMode={isDarkMode} />
           <ThemeSelector onClick={setThemeHandler} isDarkMode={isDarkMode} />
