@@ -14,7 +14,9 @@ export default function Rules() {
 
   return (
     <>
-      <button onClick={() => setShowRules(true)}>{t("rules.title")}</button>
+      <button onClick={() => setShowRules(true)} className="text-primary">
+        {t("rules.title")}
+      </button>
 
       {showRules && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/40">
@@ -29,7 +31,7 @@ export default function Rules() {
                   onClick={() => setModeRule("classic")}
                   className={clsx(
                     "py-0.5 px-1 rounded-t-md",
-                    modeRule === "classic" ? "bg-black/10" : "bg-transparent",
+                    modeRule === "classic" ? "bg-primary/15" : "bg-transparent",
                   )}
                 >
                   Classic
@@ -39,7 +41,7 @@ export default function Rules() {
                   className={clsx(
                     "py-0.5 px-1 rounded-t-md",
                     modeRule === "doubleAgent"
-                      ? "bg-black/10"
+                      ? "bg-primary/15"
                       : "bg-transparent",
                   )}
                 >
@@ -49,14 +51,16 @@ export default function Rules() {
                   onClick={() => setModeRule("oddOneOut")}
                   className={clsx(
                     "py-0.5 px-1 rounded-t-md",
-                    modeRule === "oddOneOut" ? "bg-black/10" : "bg-transparent",
+                    modeRule === "oddOneOut"
+                      ? "bg-primary/15"
+                      : "bg-transparent",
                   )}
                 >
                   Odd One Out
                 </button>
               </div>
 
-              <div className="bg-black/10 p-2 rounded-b-lg h-72 max-w-160 overflow-y-auto">
+              <div className="bg-primary/15 p-2 rounded-b-lg h-72 max-w-160 overflow-y-auto">
                 <h2 className="font-bold">
                   {t(`rules.${modeRule}.description`)}
                 </h2>
@@ -74,7 +78,7 @@ export default function Rules() {
 
             <button
               onClick={() => setShowRules(false)}
-              className="bg-black/10 py-0.5 px-1 mt-2 rounded-md"
+              className="bg-primary/15 py-0.5 px-1 mt-2 rounded-md"
             >
               {t("rules.close")}
             </button>
